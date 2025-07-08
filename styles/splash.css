@@ -1,0 +1,80 @@
+.splash {
+  @apply fixed inset-0 bg-coffeeWhite dark:bg-dark-coffeeDark flex flex-col items-center justify-center z-[999] font-clicker;
+}
+
+.bars {
+  @apply flex items-end gap-[12px] mb-[1.2rem];
+}
+
+/* Each bar has a different height for visual rhythm */
+.bar {
+  @apply w-[18px] bg-primary/10 dark:bg-dark-primary/10 rounded-[4px] overflow-hidden relative;
+}
+
+.bar-1 {
+  height: 30px;
+}
+.bar-2 {
+  height: 50px;
+}
+.bar-3 {
+  height: 70px;
+}
+.bar-4 {
+  height: 50px;
+}
+.bar-5 {
+  height: 30px;
+}
+
+/* Fill animates from bottom to top inside each bar */
+.fill {
+  @apply absolute bottom-0 left-0 w-full bg-primary dark:bg-dark-primary;
+  height: 0%;
+  animation: fillDrain 3s ease-in-out infinite;
+}
+
+@keyframes fillDrain {
+  0% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+.text {
+  @apply text-[2rem] text-text dark:text-dark-text font-bold;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dots::after {
+  content: '';
+  display: inline-block;
+  width: 1ch;
+  animation: dots 1.2s steps(4, end) infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: '';
+  }
+  25% {
+    content: '.';
+  }
+  50% {
+    content: '..';
+  }
+  75% {
+    content: '...';
+  }
+  100% {
+    content: '';
+  }
+}
+

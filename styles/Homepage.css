@@ -1,0 +1,229 @@
+/* home main styling starts */
+.parellex-scrolling {
+  @apply bg-[url('/img-1.jpg')] 
+  dark:bg-[url('/img-9.jpg')] flex flex-col items-center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.homepage-sub{
+    @apply flex flex-col  bg-coffeeWhite dark:bg-dark-coffeeDark relative
+    py-[40px] w-full overflow-x-hidden;
+ }
+/* home main styling ends */
+/* hero styling starts */
+.hero-section {
+  @apply relative w-full h-full bg-cover bg-center;
+  background-image: url('/coffee_image.png');
+}
+.overlay {
+    @apply relative w-full h-full bg-cover bg-center z-10;
+   background-image: url('/overlay.png');
+}
+
+.hero-content {
+  @apply relative z-10 flex flex-col gap-[5px] h-full text-white px-[40px] py-[5rem] justify-center w-full md:w-[40rem];
+}
+.hero-content h6{
+    @apply font-coffee font-semibold text-[16px] md:text-[22px] w-full leading-relaxed tracking-wide;
+}
+.hero-content h1{
+    @apply font-clicker text-[100px] sm:text-[150px] md:text-[220px]  italic leading-relaxed tracking-wide w-full text-primary dark:text-dark-primary;
+}
+.hero-content h4{
+    @apply leading-relaxed tracking-wide text-[10px] sm:text-[12px] md:text-[16px] font-thin font-read text-justify;
+}
+.hero-content button{
+    @apply bg-secondary dark:bg-dark-secondary hover:cursor-pointer hover:bg-secondary/50 dark:hover:bg-dark-secondary/50 w-[8rem] md:text-[16px] text-[13px] rounded-lg py-2 mt-5
+}
+/* hero styling ends */
+
+/* second home page styling starts */
+.second-home-page{
+    @apply flex items-center lg:flex-row flex-col  gap-[50px] px-[40px]
+}
+
+.sub-second-home-page{
+    @apply flex flex-col gap-[10px] w-full
+}
+.sub-second-home-page h3{
+    @apply text-[30px] sm:text-[40px] font-read text-primary dark:text-dark-primary font-bold
+}
+.sub-second-home-page p{
+    @apply text-justify text-[14px] sm:text-[16px] text-mutedGray2 dark:text-dark-mutedGray2
+}
+.btn-sub-second{
+    @apply bg-primary dark:bg-dark-primary w-[8rem] rounded-lg py-3 flex items-center text-text dark:text-dark-text font-bold justify-center mt-5
+}
+.img-second-home-page{
+    @apply w-full h-full flex items-center justify-center lg:justify-end
+}
+.coffee-img{
+    @apply text-[20rem] sm:text-[30rem] text-primary dark:text-dark-primary text-end animate-float transition duration-300 ease-in-out;
+}
+/* second home page styling ends */
+
+/* general styling starts */
+.left-blast{
+    @apply absolute left-[-4rem] h-[272px] w-[350px] md:flex hidden top-[38rem] lg:top-[20rem] overflow-x-hidden
+}
+.right-blast{
+ @apply absolute right-[-4rem] h-[272px] w-[350px] md:flex hidden top-[80rem] lg:top-[64rem] overflow-x-hidden
+}
+
+/* general styling ends */
+
+/* third home page styling starts */
+.third-home-container{
+    @apply flex flex-col gap-10 py-10
+}
+.third-home-container header{
+    @apply px-[40px] flex items-center justify-center flex-col text-center
+}
+.third-home-container header h2{
+    @apply text-[25px] sm:text-[30px] md:text-[42px] font-bold text-primary dark:text-dark-primary font-read
+}
+.third-home-container header p{
+    @apply text-mutedGray2 dark:text-dark-mutedGray2 font-signature  text-[15px] md:text-[17px]
+}
+ .keen-slider__slide section{
+    @apply hover:animate-wiggle transition-transform duration-300
+ }
+.keen-slider__slide img{
+    @apply w-full h-[200px]
+}
+.third-home-page-content{
+    @apply bg-secondary/5 dark:bg-dark-secondary/5
+    border-x border-b border-x-secondary border-b-secondary dark:border-b-dark-secondary dark:border-x-dark-secondary flex flex-col items-center justify-center gap-1 py-3
+}
+.third-home-page-content h4{
+    @apply  font-clicker text-[20px] text-primary dark:text-dark-primary
+}
+.sub-third{
+    @apply text-[14px] text-secondary dark:text-dark-secondary font-clean
+}
+.third-home-page-content h6{
+    @apply mt-2 text-lg font-bold text-primary dark:text-dark-primary font-read
+}
+.third-home-page-content button{
+    @apply mt-3 px-4 py-1 bg-primary dark:bg-primary text-mutedGray dark:text-dark-mutedGray  rounded hover:bg-opacity-90
+}
+/* third home page styling ends */
+
+/* fourth home page styling starts */
+.fourth-home-container{
+    @apply px-[40px] py-10
+}
+.fourth-grid{
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6
+}
+.fourth-grid-sub{
+    @apply bg-secondary/20 dark:bg-dark-secondary/20 shadow-lg p-6 rounded-[15px] hover:bg-secondary/5 dark:hover:bg-dark-secondary/5 hover:animate-bounceY transition duration-300 ease-in-out text-center flex items-center justify-center flex-col
+}
+.icon-fourth{
+    @apply text-[4rem] text-shadow-md text-text dark:text-dark-text;
+}
+.fourth-grid-sub h3{
+    @apply text-[20px] font-semibold text-text dark:text-dark-text font-clicker;
+}
+.fourth-grid-sub p{
+    @apply text-[16px] text-primary dark:text-dark-primary font-calm
+}
+/* fourth home page styling ends */
+
+/* fifth home page styling starts */
+.fifth-home-container{
+    @apply flex items-center justify-between gap-[20px] px-[40px] py-10 w-full bg-background/20 dark:bg-dark-background/20 sm:flex-row flex-col
+}
+.fifth-section-1{
+    @apply flex flex-col gap-4 w-full sm:w-[500px]
+}
+.fifth-section-1 h3{
+    @apply text-[40px] text-text dark:text-dark-text font-read font-bold;
+}
+.fifth-section-1 p{
+    @apply text-[20px] text-primary dark:text-dark-primary font-signature
+}
+.fifth-section-1 button{
+    @apply mt-3 px-4 py-2 bg-primary dark:bg-primary text-text dark:text-dark-text  rounded hover:bg-opacity-90 w-[9rem]
+}
+.fifth-section-2{
+    @apply w-[20rem] h-[20rem]
+}
+.fifth-section-2 img{
+    @apply h-full w-full animate-pulseFast transition-transform duration-300
+}
+/* .fifth-light-img{
+    @apply dark:hidden flex
+}
+.fifth-dark-img{
+    @apply dark:flex hidden
+} */
+/* fifth home page styling ends */
+
+/* sixth home page styling starts */
+.sixth-home-container{
+    @apply px-[40px] py-10 w-full bg-coffeeWhite dark:bg-dark-coffeeDark relative overflow-hidden
+}
+.sixth-home-container header{
+    @apply flex items-center justify-center flex-col text-center
+}
+.sixth-home-container header h2{
+    @apply text-[25px] sm:text-[30px] md:text-[42px] font-bold text-primary dark:text-dark-primary font-read
+}
+.sixth-home-container header p{
+    @apply text-mutedGray dark:text-dark-mutedGray font-signature  text-[15px] md:text-[17px]
+}
+.sixth-home-container .keen-slider{
+    @apply w-full max-w-4xl mx-auto px-4  bg-primary/5 dark:bg-dark-primary/5 my-5
+    border border-primary dark:border-dark-primary p-5;
+}
+.sixth-home-container .keen-slider__slide{
+    @apply flex flex-col justify-center items-center gap-4  w-full;
+}
+.sixth-home-container .keen-slider p{
+    @apply text-mutedGray dark:text-dark-mutedGray italic text-justify text-[17px] w-[90%] font-read leading-relaxed
+}
+.quote-left{
+    @apply absolute top-0 left-3 text-[20px] text-primary dark:text-dark-primary
+}
+.quote-right{
+    @apply absolute top-0 right-6 text-[20px] text-primary dark:text-dark-primary
+}
+.sixth-home-container .keen-main-sub{
+    @apply flex items-center justify-center flex-col
+}
+.sixth-home-container .keen-sub{
+    @apply flex items-center flex-col py-4;
+}
+.sixth-home-container .keen-sub h5{
+    @apply font-semibold text-primary dark:text-dark-primary text-[25px] font-clean
+}
+.sixth-home-container .keen-sub span{
+    @apply font-calm text-[14px] text-mutedGray dark:text-dark-mutedGray
+}
+.sixth-home-container button{
+    @apply bg-primary dark:bg-dark-primary border-none
+}
+.left-navigate{
+    @apply absolute left-[1rem] lg:left-[10.4rem] top-1/2 transform -translate-y-1/2 rounded-full p-2 shadow-lg text-text dark:text-dark-text hover:scale-105 transition
+}
+.right-navigate{
+    @apply absolute right-[1rem] lg:right-[10.4rem] top-1/2 transform -translate-y-1/2 rounded-full p-2 shadow-lg text-text dark:text-dark-text hover:scale-105 transition
+}
+.sixth-home-container .img-container{
+    @apply w-[10rem] h-[10rem] border-[5px] border-double p-3 bg-primary/40 dark:bg-dark-primary/40 border-r-primary border-b-primary border-t-mutedGray 
+    border-l-mutedGray2 relative;
+    box-sizing: border-box;
+}
+.sixth-home-container .keen-slider__slide img{
+    @apply w-full h-full object-cover
+}
+.left-blast2{
+    @apply absolute left-[-4rem] h-[272px] w-[350px] md:flex hidden top-[-2rem] lg:top-[1rem] overflow-x-hidden
+}
+.right-blast2{
+ @apply absolute right-[-4rem] h-[272px] w-[350px] md:flex hidden  top-[30rem] overflow-x-hidden
+}
+/* sixth home page styling ends */

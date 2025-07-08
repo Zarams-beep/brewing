@@ -1,0 +1,11 @@
+.toggle-container{
+  @apply w-[42px] h-[24px] border-[1.5px] border-solid border-secondary dark:border-dark-secondary rounded-[30px] flex items-center justify-between p-[2px] relative cursor-pointer;
+}
+
+.icon{
+  @apply text-[12px];
+}
+
+.ball{
+  @apply w-[15px] h-[15px] bg-primary dark:bg-dark-primary rounded-[50%] absolute;
+}

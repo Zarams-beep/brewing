@@ -1,0 +1,239 @@
+.parellex-scrolling {
+  @apply bg-[url('/img-22.jpg')] 
+  dark:bg-[url('/img-25.jpg')] flex flex-col items-center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.menuPage-sub{
+    @apply flex flex-col bg-coffeeWhite dark:bg-dark-coffeeDark relative
+    p-[40px] w-full overflow-hidden;
+ }
+/* hero styling starts */
+.menu-section {
+  @apply relative w-full h-full bg-cover bg-center;
+  background-image: url('/img-20.jpg');
+}
+.overlay {
+    @apply relative w-full h-full bg-cover bg-center z-10;
+   background-image: url('/overlay.png');
+}
+.hero-content {
+  @apply relative z-10 flex flex-col gap-[5px] h-full text-white px-[40px] py-[5rem] justify-center w-full md:w-[40rem];
+}
+.hero-content h6{
+    @apply font-coffee font-semibold text-[16px] md:text-[22px] w-full leading-relaxed tracking-wide;
+}
+.hero-content h1{
+    @apply font-clicker text-[100px] sm:text-[150px] md:text-[220px]  italic leading-relaxed tracking-wide w-full text-primary dark:text-dark-primary;
+}
+.hero-content h4{
+    @apply leading-relaxed tracking-wide text-[10px] sm:text-[12px] md:text-[16px] font-thin font-read text-justify;
+}
+.hero-content button{
+    @apply bg-secondary dark:bg-dark-secondary hover:cursor-pointer hover:bg-secondary/50 dark:hover:bg-dark-secondary/50 w-[8rem] md:text-[16px] text-[13px] rounded-lg py-2 mt-5
+}
+/* hero section styling ends */
+
+/* menu section styling starts */
+.main-menu-wrapper, .main-baristas-section, .main-add-on-notes{
+  @apply px-[40px]  flex flex-col w-full;
+}
+.menu-wrapper, .baristas-pick-section, .add-on-notes{
+  @apply flex md:flex-row flex-col-reverse gap-4 overflow-hidden w-full; 
+}
+header{
+    @apply px-[40px] py-[3rem] flex items-center justify-center flex-col text-center
+}
+header h2{
+    @apply text-[25px] sm:text-[30px] md:text-[42px] font-bold text-primary dark:text-dark-primary font-read
+}
+header p{
+    @apply text-mutedGray2 dark:text-dark-mutedGray2 font-signature  text-[15px] md:text-[17px]
+}
+.menu-wrapper-sub{
+  @apply flex flex-col gap-4 w-full overflow-hidden;
+}
+.tab-section {
+  @apply grid gap-4 border-none md:border-b border-mutedGray2 dark:border-dark-mutedGray2;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.tab-section button{
+  @apply px-4 py-2 rounded-full transition font-semibold border text-[16px] font-coffee
+}
+.tab-section .active-btn{
+  @apply bg-primary dark:bg-dark-primary text-text dark:text-dark-text;
+}
+.tab-section .non-active-btn{
+  @apply bg-mutedGray dark:bg-dark-mutedGray text-mutedGray2 dark:text-dark-mutedGray2;
+}
+.tab-section .btn-overlay{
+  @apply w-full border-b border-solid border-secondary dark:border-dark-secondary rounded-[5px] shadow-xl
+}
+.menu-grid{
+  @apply col-span-2 grid sm:grid-cols-2 gap-6;
+}
+.menu-selected{
+  @apply cursor-pointer bg-secondary dark:bg-dark-secondary rounded-lg p-4 flex flex-col justify-center items-center shadow-md hover:shadow-lg transition text-mutedGray dark:text-dark-mutedGray font-clean border-[5px] border-double border-mutedGray dark:border-dark-mutedGray
+}
+.img-container{
+  @apply relative w-full h-[180px] object-top
+}
+.img-container img{
+  @apply rounded-md object-cover
+}
+.menu-selected-sub{
+  @apply flex flex-col w-full items-center py-4 justify-center 
+}
+.menu-selected-sub h4{
+  @apply font-bold text-[20px] sm:text-[25px] font-clicker text-center;
+}
+.menu-selected-sub p{
+  @apply text-[14px] sm:text-[16px] text-center font-semibold;
+}
+.menu-selected-sub .special{
+  @apply italic text-[14px] font-coffee my-1
+}
+.ingredient-container{
+  @apply flex flex-col gap-1
+}
+.ingredient-container ul{
+  @apply list-disc list-inside
+}
+.ingredient-container ul li{
+  @apply font-coffee font-thin
+}
+.menu-sub{
+  @apply flex text-xs flex-wrap gap-1 mt-2 text-center
+}
+.menu-sub span{
+  @apply bg-mutedGray2/60 dark:bg-dark-mutedGray2/60 px-2 py-1 rounded-full font-bold;
+}
+.menu-price{
+  @apply mt-2 font-semibold text-mutedGray dark:text-dark-mutedGray
+}
+.menu-selected-sub .btn-details{
+  @apply mt-2 text-[16px] underline font-thin font-signature
+}
+.details-panel{
+  @apply h-[35rem] w-[35rem] overflow-hidden;
+}
+.add-cart{
+  @apply shadow-lg mt-4 px-4 py-2 rounded-full w-full font-bold
+}
+.quantity-control{
+  @apply flex items-center gap-4 mb-3
+}
+.quantity-control > span:first-child{
+  @apply font-semibold
+}
+.quantity-control button{
+  @apply px-2 py-1 rounded-full bg-mutedGray2/60 dark:bg-dark-mutedGray2/60 font-bold text-[16px];
+}
+/* menu section styling ends */
+
+/* baristas styling starts */
+.baristas-pick-card{
+  @apply flex flex-col md:flex-row overflow-hidden w-full justify-between gap-0
+}
+.baristas-img{
+  @apply relative w-full md:w-1/2 h-64 md:h-[35rem] 
+}
+.baristas-img img{
+  @apply h-full w-full object-cover;
+}
+.baristas-content{
+  @apply p-6 md:w-1/2 flex flex-col justify-center shadow-lg border-b-[10px] md:border-r-[10px] border-double  md:border-0 border-primary dark:border-dark-primary rounded-r-xl font-coffee
+}
+.header-barista{
+  @apply flex items-center gap-2 text-yellow-500 text-xl mb-2 font-clicker
+}
+.header-barista .icon{
+  @apply text-[30px]
+}
+.header-barista span{
+  @apply font-bold text-[30px]
+}
+.baristas-content h3{
+  @apply text-[20px] font-bold text-primary
+}
+.baristas-content p:first-child{
+  @apply text-mutedGray dark:text-dark-mutedGray;
+}
+.baristas-content p:last-child{
+  @apply italic text-[16px] text-mutedGray2 dark:text-dark-mutedGray2
+}
+/* baristas styling ends */
+
+/* general styling starts */
+.left-blast{
+    @apply absolute left-[-4rem] h-[272px] w-[350px] md:flex hidden top-[35rem] lg:top-[30rem] overflow-x-hidden
+}
+.right-blast{
+ @apply absolute right-[-4rem] h-[272px] w-[350px] md:flex hidden top-[73rem] lg:top-[70rem] overflow-x-hidden
+}
+
+/* general styling ends */
+
+/* add on styling starts */
+.main-add-on-notes{
+  @apply bg-coffeeWhite dark:bg-dark-coffeeDark
+}
+.add-on-notes{
+  @apply pb-[2rem] m-auto w-full;
+}
+.add-note-sub{
+  @apply flex items-center justify-between sm:flex-row flex-col gap-[10px];
+}
+.add-note-sub p{
+  @apply text-[14px] md:text-[16px] font-bold font-clean bg-mutedGray dark:bg-dark-mutedGray p-5 rounded-full shadow-md border-b-[10px] md:border-r-[10px] border-double  md:border-0 border-primary dark:border-dark-primary
+  hover:animate-fadeIn transition-transform duration-300 text-mutedGray2 dark:text-dark-mutedGray2
+}
+/* add on styling ends */
+
+/* location styling starts */
+.order-section{
+  @apply px-[40px] flex flex-col gap-0 overflow-hidden w-full bg-secondary/30 dark:bg-dark-secondary/30 font-coffee shadow-xl; 
+}
+.order-section-2{
+  @apply flex md:flex-row flex-col h-[30rem] ; 
+}
+.order-section-sub-1{
+  @apply w-full h-full
+}
+.map-container{
+  @apply h-full
+}
+.order-section-sub-2{
+  @apply h-full w-[40rem] bg-secondary dark:bg-dark-secondary items-center justify-center py-10 px-3 flex flex-col gap-4;
+}
+.order-pick-up{
+  @apply flex items-center gap-2;
+}
+.order-pick-up h2{
+  @apply text-[20px] font-bold
+}
+.order-pick-up div{
+  @apply flex gap-4 text-[20px]
+}
+.order-pick-up div button{
+  @apply px-4 py-2 rounded-[10px] transition font-semibold border text-[16px]
+}
+.order-pick-up div .active, .order-pick-up div button:hover{
+  @apply bg-primary/60 dark:bg-dark-primary/60 text-text dark:text-dark-text;
+}
+.order-section-sub-2 label{
+  @apply block font-semibold mb-1
+}
+.order-section-sub-2 select{
+  @apply w-full max-w-md
+}
+.loyalty, .pickup-address{
+  @apply mb-1 flex items-center gap-2
+}
+.order-section-sub-2 >p:last-child{
+  @apply text-sm text-mutedGray
+}
+/* location styling ends */

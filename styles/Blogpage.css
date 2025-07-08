@@ -1,0 +1,85 @@
+.parellex-scrolling {
+  @apply bg-[url('/img-8.jpg')] 
+  dark:bg-[url('/img-21.jpg')] flex flex-col items-center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.blogPage-sub{
+    @apply flex flex-col bg-coffeeWhite dark:bg-dark-coffeeDark relative
+    p-[40px] w-full overflow-hidden;
+ }
+/* hero styling starts */
+.blog-section {
+  @apply relative w-full h-full bg-cover bg-center;
+  background-image: url('/img-19.jpg');
+}
+.overlay {
+    @apply relative w-full h-full bg-cover bg-center z-10;
+   background-image: url('/overlay.png');
+}
+.blog-section .hero-content {
+  @apply relative z-10 flex flex-col gap-[5px] h-full text-white px-[40px] py-[5rem] justify-center w-full md:w-[70rem];
+}
+.blog-section .hero-content h6{
+    @apply font-coffee font-semibold text-[16px] md:text-[22px] w-full leading-relaxed tracking-wide;
+}
+.blog-section .hero-content h1{
+    @apply font-clicker text-[100px] sm:text-[80px] md:text-[100px]  italic leading-relaxed tracking-wide w-full text-primary dark:text-dark-primary;
+}
+.blog-section .hero-content h4{
+    @apply leading-relaxed tracking-wide text-[10px] sm:text-[12px] md:text-[16px] font-thin font-read text-justify w-full md:w-[40rem];
+}
+.blog-section .hero-content button{
+    @apply bg-secondary dark:bg-dark-secondary hover:cursor-pointer hover:bg-secondary/50 dark:hover:bg-dark-secondary/50 w-[8rem] md:text-[16px] text-[13px] rounded-lg py-2 mt-5
+}
+/* hero section styling ends */
+
+/* blog section two styling starts */
+.blog-slide{
+  @apply overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300
+}
+.blog-slide img{
+  @apply object-cover w-full h-[300px] group-hover:scale-105 transition-transform duration-500
+}
+.blog-sub-slide{
+  @apply py-9 px-5 h-auto lg:h-[8rem] bg-white dark:bg-black text-gray-800 dark:text-white
+}
+.blog-sub-slide h2{
+  @apply text-[18px] font-bold font-coffee
+}
+.blog-sub-slide p{
+  @apply text-[14px] font-semibold font-classic;
+}
+/* blog section two styling ends */
+
+/* did you know styling starts */
+.did-you-know{
+  @apply flex flex-col gap-10 py-10 relative
+}
+.did-you-know .header-know{
+  @apply text-[30px] font-bold  flex items-center justify-center gap-2 font-clicker mb-7 md:mb-0;
+}
+.did-you-know .bulb{
+  @apply text-yellow-400;
+}
+.did-you-know-sub{
+  @apply relative
+}
+.did-you-know-animation{
+  @apply w-full flex items-center md:flex-row flex-col justify-center h-[30rem] 
+}
+.did-you-know-animation img{
+  @apply object-cover w-full md:w-[30rem] h-[20rem] md:h-full md:rounded-none rounded-t-lg
+}
+.did-you-know-small{
+  @apply md:rounded-r-lg shadow-lg h-full bg-mutedGray dark:bg-dark-mutedGray px-5 flex items-center justify-center flex-col gap-3 w-full md:py-0 py-10
+}
+.fact-know{
+  @apply font-coffee text-[18px] sm:text-[25px] font-bold flex items-center justify-center gap-2
+}
+.did-you-know h6{
+  @apply text-[15px] sm:text-[18px] text-text dark:text-dark-text italic font-clicker
+}
+/* did you know styling ends */

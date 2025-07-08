@@ -1,0 +1,65 @@
+/* general styling starts */
+.auth-container {
+  @apply min-h-screen flex items-center w-full;
+}
+
+.auth-sub-container {
+  @apply bg-gradient-to-br from-coffeeWhite to-mutedGray2
+          dark:from-dark-coffeeDark dark:to-dark-mutedGray2 shadow-xl flex flex-col md:flex-row overflow-hidden w-full;
+}
+.img-container {
+  @apply relative w-full h-64 md:h-auto;
+}
+.img-container img {
+  @apply object-cover w-full h-full object-top;
+}
+.right-auth-container {
+  @apply w-full p-8 md:p-10 space-y-6;
+}
+.right-auth-container header{
+    @apply space-y-0
+}
+.right-auth-container header h1{
+    @apply text-[35px] font-bold text-text dark:text-dark-text font-clicker text-center p-0 m-0;
+}
+.right-auth-container header p, .input-container label{
+    @apply text-[16px] font-semibold font-coffee text-mutedGray2 dark:text-dark-mutedGray2 text-center p-0 m-0;
+}
+.right-auth-container form{
+    @apply space-y-4
+}
+.input-container{
+    @apply flex flex-col gap-1;
+}
+.input-container label{
+    @apply text-start
+}
+.input-container input{
+    @apply w-full px-4 py-3 border rounded-lg outline-none text-sm
+}
+.input-container .error{
+    @apply border-red-500;
+}
+.input-container .non-error{
+    @apply border-mutedGray dark:border-dark-mutedGray;
+}
+.input-container input:focus{
+    @apply border-accent dark:border-dark-accent
+}
+.right-auth-container button{
+    @apply w-full py-3 px-4 rounded-lg text-white text-sm font-medium transition
+}
+.right-auth-container .invalid{
+    @apply bg-mutedGray2 dark:bg-dark-mutedGray2 cursor-not-allowed
+}
+.right-auth-container .non-invalid{
+    @apply bg-primary dark:bg-dark-primary hover:bg-primary/20 dark:hover:bg-dark-primary/20;
+}
+.google-auth{
+    @apply flex items-center text-primary dark:text-dark-primary gap-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 w-full justify-center text-sm
+}
+
+/* general styling ends */
+/* login page styling starts */
+
+/* login page styling ends */

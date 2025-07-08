@@ -1,0 +1,37 @@
+.nav-bar-container {
+  @apply w-full flex justify-between items-center px-[40px] py-5 border-b border-b-secondary text-white  dark:text-white bg-[gray]/10 dark:border-b-dark-secondary overflow-x-hidden  shadow-md font-clean;
+}
+
+.nav-bar-container .logo {
+  @apply font-bold text-[32px] font-clicker italic leading-relaxed tracking-wide;
+}
+
+.links {
+  @apply flex items-center lg:flex-row flex-col gap-[20px] text-white  dark:text-white font-calm;
+}
+.links a{
+  @apply hover:text-primary dark:hover:text-primary font-bold
+}
+.active-link {
+  @apply text-primary dark:text-primary font-bold;
+}
+.nav-btn{
+  @apply flex items-center flex-col gap-1 justify-center lg:py-0 py-4
+}
+.logout {
+  @apply p-[5px] border-none cursor-pointer rounded-[3px] text-text dark:text-dark-text bg-secondary px-4 dark:bg-dark-secondary hover:bg-secondary/60 dark:hover:bg-dark-secondary/60;
+}
+.drawer-btn {
+  @apply flex items-center gap-3 justify-between sm:flex-row flex-col;
+}
+.drawer-btn button {
+  @apply w-full py-2 text-[14px] rounded-md font-bold shadow-sm hover:cursor-pointer;
+}
+.nav-bar-media-small{
+  @apply flex items-center gap-5
+}
+.register-link{
+    @apply py-[5px] px-[15px] cursor-pointer rounded-[10px] text-secondary dark:text-dark-secondary border border-mutedGray dark:border-dark-mutedGray hover:bg-mutedGray/20 dark:hover:bg-dark-mutedGray/20
+  }
+
+ 

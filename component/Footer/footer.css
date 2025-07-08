@@ -1,0 +1,72 @@
+.footer-container {
+  @apply sm:text-[14px] text-[10px] flex flex-col  items-center justify-between relative w-full overflow-x-hidden;
+}
+
+.footer-float-img {
+@apply hidden md:flex absolute top-[3rem] left-[-5rem] w-[15rem];
+}
+.footer-float-img-2 {
+@apply hidden md:flex absolute top-[7rem] right-[-6rem] w-[15rem];
+}
+
+.footer-newsletter {
+  @apply flex flex-col gap-1 justify-center items-center bg-background/20 dark:bg-dark-background/20 w-full py-20;
+}
+
+.footer-heading {
+  @apply text-[1.2rem] md:text-[2rem] text-text dark:text-dark-text font-bold font-coffee;
+}
+
+.footer-description {
+  @apply text-mutedGray dark:text-dark-mutedGray font-semibold font-clean text-center text-[14px] md:text-[16px] mb-4;
+}
+
+.footer-subscribe {
+  @apply flex items-center md:flex-row flex-col w-[60%];
+}
+
+.footer-input {
+  @apply px-2 py-3 md:rounded-none rounded-lg md:rounded-tl-[5px] md:rounded-bl-[5px] outline-none border-none text-[16px] w-full;
+}
+
+.footer-button {
+  @apply px-5 py-3 outline-none border-none  bg-primary dark:bg-dark-primary text-text dark:text-dark-text cursor-pointer md:rounded-none rounded-lg md:rounded-tr-[5px] md:rounded-br-[5px] text-[16px] w-full md:w-[8rem];
+}
+
+.footer-error {
+  @apply text-[red] text-[13px] font-read;
+}
+
+.footer-success {
+  @apply text-[green] text-[13px] font-read;
+}
+
+.footer-links {
+  @apply grid items-start w-full bg-coffeeWhite dark:bg-dark-coffeeDark px-[40px] py-11 gap-8;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.footer-section h3 {
+  @apply font-clicker text-[2rem] font-bold text-text dark:text-text;
+}
+
+.footer-section-desc, .footer-section-1 p {
+  @apply text-mutedGray dark:text-dark-mutedGray font-[14px] text-justify;
+}
+
+.footer-icons {
+  @apply flex items-center gap-1 mt-2 flex-wrap;
+}
+
+.footer-icon {
+  @apply text-[2rem] cursor-pointer text-primary dark:text-dark-primary hover:text-primary/50 dark:hover:text-dark-primary/50;
+}
+.footer-section-1{
+  @apply flex flex-col gap-1;
+}
+.footer-section-1 h5{
+  @apply text-[1.2rem] text-text dark:text-dark-text font-bold font-coffee;
+}
+.footer-section-1 p{
+  @apply cursor-pointer hover:text-text dark:hover:text-text
+}

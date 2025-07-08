@@ -1,0 +1,215 @@
+.parellex-scrolling {
+  @apply bg-[url('/img-5.jpg')] 
+  dark:bg-[url('/img-14.jpg')] flex flex-col items-center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.aboutPage-sub{
+    @apply flex flex-col bg-coffeeWhite dark:bg-dark-coffeeDark relative
+    p-[40px] w-full overflow-hidden;
+ }
+/* hero styling starts */
+.about-section {
+  @apply relative w-full h-full bg-cover bg-center;
+  background-image: url('/img-11.jpg');
+}
+.overlay {
+    @apply relative w-full h-full bg-cover bg-center z-10;
+   background-image: url('/overlay.png');
+}
+.hero-content {
+  @apply relative z-10 flex flex-col gap-[5px] h-full text-white px-[40px] py-[5rem] justify-center w-full md:w-[40rem];
+}
+.hero-content h6{
+    @apply font-coffee font-semibold text-[16px] md:text-[22px] w-full leading-relaxed tracking-wide;
+}
+.hero-content h1{
+    @apply font-clicker text-[100px] sm:text-[150px] md:text-[220px]  italic leading-relaxed tracking-wide w-full text-primary dark:text-dark-primary;
+}
+.hero-content h4{
+    @apply leading-relaxed tracking-wide text-[10px] sm:text-[12px] md:text-[16px] font-thin font-read text-justify;
+}
+.hero-content button{
+    @apply bg-secondary dark:bg-dark-secondary hover:cursor-pointer hover:bg-secondary/50 dark:hover:bg-dark-secondary/50 w-[8rem] md:text-[16px] text-[13px] rounded-lg py-2 mt-5
+}
+/* hero section styling ends */
+
+/* about content styling starts */
+.about-content-container, .our-story-section, .core-values-section, .fifth-container, .sustainability-section{
+@apply px-[40px] py-[3rem] flex flex-col gap-4 items-center text-center;
+}
+
+.about-header, .our-story-header, .core-values-header, .beans-header, .sustainability-header{
+  @apply flex flex-col gap-1 mb-4 justify-center items-center;
+}
+
+.about-title, .our-story-header h2, .core-values-header h2, .beans-header h2, .sustainability-header h2{
+    @apply text-[25px] sm:text-[30px] md:text-[42px] font-bold text-primary dark:text-dark-primary font-read
+}
+.about-description, .our-story-header p, .core-values-header p, .sustainability-header p{
+    @apply text-mutedGray2 dark:text-dark-mutedGray2 font-signature  text-[15px] md:text-[17px]
+}
+
+.about-vision-mission-grid {
+    @apply flex md:flex-row flex-col gap-0 items-center justify-between
+}
+
+.vision-box, .mission-box {
+    @apply flex-1 text-left p-[1rem];
+}
+
+.vision-title, .mission-title {
+    @apply text-[1.5rem] text-center font-bold font-clicker text-secondary dark:text-dark-secondary;
+}
+
+.vision-text, .mission-text {
+    @apply text-mutedGray2 dark:text-dark-mutedGray2 leading-relaxed text-[16px] text-justify;
+}
+
+/* Shows only on md+ and light mode */
+.coffee-image {
+  @apply hidden md:flex dark:hidden text-[20rem] text-secondary animate-float transition duration-300 ease-in-out;
+}
+
+/* Shows only on md+ and dark mode */
+.coffee-image-dark {
+  @apply hidden md:dark:flex text-[20rem] text-dark-secondary animate-float transition duration-300 ease-in-out;
+}
+
+/* Shows only on md- and light mode */
+.coffee-image-md {
+  @apply md:hidden flex dark:hidden text-[20rem] text-secondary animate-float transition duration-300 ease-in-out;
+}
+
+/* Shows only on md- and dark mode */
+.coffee-image-dark-md {
+  @apply md:dark:hidden hidden dark:flex text-[20rem] text-dark-secondary animate-float transition duration-300 ease-in-out;
+}
+
+/* about content styling ends */
+
+/* general styling starts */
+.left-blast{
+    @apply absolute left-[-4rem] h-[272px] w-[350px] md:flex hidden top-[23rem] lg:top-[20rem] overflow-x-hidden
+}
+.right-blast{
+ @apply absolute right-[-4rem] h-[272px] w-[350px] md:flex hidden top-[75rem] lg:top-[60rem] overflow-x-hidden
+}
+
+/* general styling ends */
+
+/* about story styling starts */
+
+.our-story-timeline {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative mt-[2rem] 
+}
+
+.timeline-item {
+    @apply flex flex-col items-center gap-3 hover:animate-pulseFast transition-transform duration-300 border-l-[4px] border-solid border-l-primary dark:border-l-dark-primary p-[1rem] rounded-[20px]; 
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.timeline-icon {
+    @apply text-[2.5rem] text-primary dark:text-dark-primary;
+}
+
+.timeline-year {
+    @apply font-bold text-primary dark:text-dark-primary;
+}
+
+.timeline-title {
+    @apply text-[0.95rem] md:text-[1.5rem] text-mutedGray dark:text-dark-mutedGray font-clicker font-semibold;
+}
+
+.timeline-description {
+    @apply text-[0.8rem] md:text-[0.95rem] text-justify text-text dark:text-dark-text font-clean;
+}
+/* about story styling ends */
+
+/* about core styling starts */
+.core-values-grid{
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-6 
+}
+.value-card{
+    @apply rounded-xl flex sm:flex-row flex-col gap-3 items-center h-full sm:p-0 p-10 sm:h-[8rem] shadow hover:shadow-lg transition duration-300 hover:animate-wiggle border-b-[4px] border-solid border-primary dark:border-dark-primary
+}
+.value-card-sub{
+    @apply flex flex-col items-center justify-center px-4 border-r-0 sm:border-r-4 border-mutedGray/20 h-full dark:border-dark-mutedGray/20
+}
+.value-card-sub div{
+    @apply text-4xl text-secondary dark:text-dark-secondary
+}
+.value-card-sub h4{
+    @apply font-semibold font-clicker text-mutedGray2 dark:text-dark-mutedGray2 text-[22px]
+}
+.value-card p{
+    @apply text-text dark:text-dark-text font-coffee text-[16px] font-light
+}
+/* about core styling ends */
+/* how it helps styling starts */
+.fifth-container{
+    @apply bg-coffeeWhite dark:bg-dark-coffeeDark
+}
+.how-help-container{
+  @apply flex flex-col md:flex-row items-center gap-x-10
+}
+.reverse-help{
+  @apply md:flex-row-reverse;
+}
+.how-help-card{
+  @apply relative  w-full md:w-1/2 h-[300px];
+}
+.how-help-card img{
+  @apply object-cover rounded-lg h-[10rem] w-[10rem] 
+}
+.arrow-help{
+  @apply absolute   flex justify-between z-10 w-full  h-full
+}
+.arrow-help button{
+  @apply bg-mutedGray/40 dark:bg-dark-mutedGray/40  text-text dark:text-dark-text text-[2rem] px-2 py-1 rounded
+}
+.how-help-content{
+  @apply w-full md:w-[70%] text-center md:text-left
+}
+.how-help-content h3{
+  @apply text-[30px] font-semibold text-secondary dark:text-dark-secondary font-clicker
+}
+.how-help-content p{
+  @apply text-text/80 dark:text-dark-text/80 leading-relaxed mb-10
+}
+/* how it helps styling ends */
+
+/* sustainability styling starts */
+.sustainability-section{
+    @apply bg-mutedGray2/10 dark:bg-dark-mutedGray2/10 w-full
+}
+.sustainability-sub{
+    @apply flex items-center md:items-start justify-center md:flex-row flex-col-reverse gap-[20px] md:justify-between w-full ;
+}
+.sustainability-sub-1{
+    @apply flex flex-col gap-7 w-[40rem] px-[40px]
+}
+.sustainability-min-1{
+    @apply flex items-center md:flex-row flex-col gap-3  shadow-lg p-7 border-y-[4px] border-[#8A9A5B]/10 rounded-lg py-4
+}
+.sustainability-min-1 .icon{
+    @apply text-[40px] text-[#8A9A5B] mb-4
+}
+.sustainability-min-1 div{
+    @apply flex flex-col items-start justify-start;
+}
+.sustainability-min-1 div h4{
+    @apply text-[#8A9A5B] font-clicker font-bold text-[30px] text-start;
+}
+.sustainability-min-1 div p{
+    @apply text-text dark:text-dark-text text-start font-coffee
+}
+.img-sustainability{
+    @apply w-[20rem] h-[20rem]
+}
+.img-sustainability img{
+    @apply w-full h-full animate-float transition-transform duration-300
+}
+/* sustainability styling ends */
