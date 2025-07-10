@@ -2,10 +2,11 @@ import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import { persistReducer, persistStore } from 'redux-persist';
 import storage from 'redux-persist/lib/storage'; // defaults to localStorage
 import authReducer from './slices/authSlices';
-
+import cartReducer from './slices/CartSlices'
 // Combine all reducers
 const rootReducer = combineReducers({
   auth: authReducer,
+  cart: cartReducer,
 
 });
 
@@ -13,7 +14,7 @@ const rootReducer = combineReducers({
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['sidebar','auth'],// Add other reducers here if you want to persist them
+  whitelist: ['sidebar','auth', 'cart'],// Add other reducers here if you want to persist them
 };
 
 // Create persisted reducer

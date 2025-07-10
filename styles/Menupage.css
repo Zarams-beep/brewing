@@ -81,6 +81,9 @@ header p{
 .img-container{
   @apply relative w-full h-[180px] object-top
 }
+.details-panel .img-container-details{
+  @apply relative w-full h-full object-top
+}
 .img-container img{
   @apply rounded-md object-cover
 }
@@ -118,10 +121,10 @@ header p{
   @apply mt-2 text-[16px] underline font-thin font-signature
 }
 .details-panel{
-  @apply h-[35rem] w-[35rem] overflow-hidden;
+  @apply h-[45rem] w-[35rem] overflow-hidden;
 }
 .add-cart{
-  @apply shadow-lg mt-4 px-4 py-2 rounded-full w-full font-bold
+  @apply shadow-lg mt-4 px-4 py-2 rounded-full w-full font-bold bg-background hover:bg-background/50 dark:bg-dark-background dark:hover:bg-dark-background/50
 }
 .quantity-control{
   @apply flex items-center gap-4 mb-3

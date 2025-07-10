@@ -1,9 +1,9 @@
 .nav-bar-container {
-  @apply w-full flex justify-between items-center px-[40px] py-5 border-b border-b-secondary text-white  dark:text-white bg-[gray]/10 dark:border-b-dark-secondary overflow-x-hidden  shadow-md font-clean;
+  @apply w-full flex justify-between items-center px-[40px] py-5 border-b border-b-secondary text-text  dark:text-text bg-[gray]/10 dark:border-b-dark-secondary overflow-x-hidden  shadow-md font-clean;
 }
 
 .nav-bar-container .logo {
-  @apply font-bold text-[32px] font-clicker italic leading-relaxed tracking-wide;
+  @apply font-bold text-[32px] font-clicker italic leading-relaxed tracking-wide text-accent dark:text-dark-accent;
 }
 
 .links {

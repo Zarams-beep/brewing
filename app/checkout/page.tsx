@@ -1,10 +1,18 @@
-import Gallery from "@/component/GalleryPage/Gallery";
-
+import Checkout from "@/component/CheckoutPage/Checkout";
+import CheckoutHeader from "@/component/CheckoutPage/CheckoutHeader";
+import Footer from "@/component/Footer/Footer";
+import "@/styles/Checkout.css";
 export const metadata = {
-  title: "Coffee Gallery Information",
-  description: "This is Gallery Page",
+  title: "Brewing Checkout",
+  description: "This is Checkout Page",
 };
 
-export default function GalleryPage (){
-  return <Gallery/>
+export default function CheckoutPage (){
+  return (
+    <div className="">
+      <CheckoutHeader/>
+      <Checkout/>
+      <Footer/>
+    </div>
+  )
 }

@@ -6,7 +6,7 @@ import React from "react";
 import "./navBar.css";
 import { usePathname } from "next/navigation";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
-
+import { persistor } from "@/store/store";
 interface HeaderType {
   id: number;
   title: string;
@@ -42,7 +42,9 @@ const HeaderBar = () => {
 
   return (
     <div className="nav-bar-container" style={{ opacity: isSticky }}>
-      <Link href="/" className="logo">Brewing</Link>
+      <Link href="/" className="logo">
+        Brewing
+      </Link>
 
       <nav className="links">
         <DarkModeToggle />
@@ -55,7 +57,11 @@ const HeaderBar = () => {
             needsAuth && status !== "authenticated" ? "/login" : link.url;
 
           return (
-            <Link key={link.id} href={href} className={isActive ? "active-link" : ""}>
+            <Link
+              key={link.id}
+              href={href}
+              className={isActive ? "active-link" : ""}
+            >
               {link.title}
             </Link>
           );
@@ -66,13 +72,24 @@ const HeaderBar = () => {
             <span className="user-welcome">
               Welcome, {session?.user?.name || "user"} 👋
             </span>
-            <button onClick={() => signOut()} className="logout">
+            <button
+              onClick={async () => {
+                await signOut();
+                persistor.purge();
+              }}
+              className="logout"
+            >
               Logout
             </button>
           </>
         ) : (
           <>
-            <button onClick={() => signIn()} className="logout">
+            <button
+              onClick={() => {
+                signIn();
+              }}
+              className="logout"
+            >
               Login
             </button>
             <Link href="/sign-up" className="register-link">

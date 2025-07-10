@@ -41,7 +41,7 @@ const Login: React.FC = () => {
 
   useEffect(() => {
     if (status === "authenticated") {
-      router.push("/blog");
+      router.push("/menu");
     }
   }, [status, router]);
 
@@ -56,7 +56,7 @@ const onSubmit = async (data: LoginSchema) => {
 
     await signIn("credentials", {
       ...data,
-      callbackUrl: "/blog",
+      callbackUrl: "/menu",
     });
   };
   if (status === "loading") return <p className="text-center">Loading...</p>;

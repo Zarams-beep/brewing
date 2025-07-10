@@ -1,0 +1,57 @@
+.checkout-header {
+  @apply w-full px-[40px] py-5 border-b border-b-secondary text-accent  dark:text-accent bg-mutedGray dark:bg-dark-mutedGray dark:border-b-dark-secondary overflow-x-hidden  shadow-md font-clean;
+}
+.checkout-sub-header{
+    @apply flex justify-between items-center w-full
+}
+.checkout-sub-header h2{
+    @apply font-clicker text-[2rem] cursor-pointer
+}
+.checkout-sub-header .checkout-padlock{
+    @apply text-[2rem]
+}
+.checkout-container{
+    @apply px-[40px] py-5;
+}
+.empty-cart{
+    @apply font-clicker text-[2rem] text-text dark:text-dark-text font-bold;
+}
+.checkout-cart{
+    @apply flex flex-col gap-4;
+}
+.cart-sub{
+    @apply flex items-center gap-4 border border-coffeeWhite dark:border-dark-coffeeDark p-4 rounded-md shadow-lg;
+}
+.cart-img{
+    @apply relative w-24 h-24
+}
+.cart-img img{
+    @apply object-cover rounded h-full w-full;
+}
+.cart-content{
+    @apply flex flex-col items-start gap-2;
+}
+.cart-sub-content{
+    @apply flex flex-col items-start
+}
+.cart-content h3{
+    @apply font-clicker text-[2rem] font-bold;
+}
+.cart-content p{
+    @apply text-[15px] font-coffee
+}
+.cart-content button{
+    @apply text-red-600 font-semibold hover:underline
+}
+.total-checkout{
+    @apply text-primary dark:text-dark-primary font-semibold
+}
+.check-out-btn{
+    @apply bg-primary dark:bg-dark-primary text-text dark:text-dark-text hover:bg-primary/30 dark:hover:bg-dark-primary/30 px-6 py-2 rounded hover:bg-gray-800
+}
+.check-out-container-btn{
+    @apply w-full flex justify-center items-center;
+}
+.checkout-modal{
+    @apply fixed inset-0 bg-secondary/20 dark:bg-dark-secondary/20 flex items-center justify-center z-50
+}

@@ -8,6 +8,7 @@ import { FaXmark } from "react-icons/fa6";
 import "./navBar.css";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 import { useSession, signIn, signOut } from "next-auth/react";
+import { persistor } from "@/store/store";
 interface HeaderType {
   id: number;
   title: string;
@@ -15,19 +16,18 @@ interface HeaderType {
   protected?: boolean;
 }
 
-
 export default function MediaHeaderSection() {
   const { data: session, status } = useSession();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const pathname = usePathname();
   const links: HeaderType[] = [
-  { id: 1, title: "Home", url: "/" },
-  { id: 2, title: "About", url: "/about" },
-  { id: 3, title: "Menu", url: "/menu" },
-  { id: 4, title: "Blog", url: "/blog", protected: true },
-  { id: 5, title: "Contact", url: "/contact" },
-  { id: 6, title: "Checkout", url: "/checkout", protected: true },
-];
+    { id: 1, title: "Home", url: "/" },
+    { id: 2, title: "About", url: "/about" },
+    { id: 3, title: "Menu", url: "/menu" },
+    { id: 4, title: "Blog", url: "/blog", protected: true },
+    { id: 5, title: "Contact", url: "/contact" },
+    { id: 6, title: "Checkout", url: "/checkout", protected: true },
+  ];
 
   const [isSticky, setSticky] = useState(1);
   useEffect(() => {
@@ -103,41 +103,51 @@ export default function MediaHeaderSection() {
           </IconButton>
 
           <nav className="links">
-              {links.map((link) => {
-          const isActive = pathname === link.url;
-          const needsAuth = link.protected;
+            {links.map((link) => {
+              const isActive = pathname === link.url;
+              const needsAuth = link.protected;
 
-          const href =
-            needsAuth && status !== "authenticated" ? "/login" : link.url;
+              const href =
+                needsAuth && status !== "authenticated" ? "/login" : link.url;
 
-          return (
-            <Link key={link.id} href={href} className={isActive ? "active-link" : ""}>
-              {link.title}
-            </Link>
-          );
-        })}
+              return (
+                <Link
+                  key={link.id}
+                  href={href}
+                  className={isActive ? "active-link" : ""}
+                >
+                  {link.title}
+                </Link>
+              );
+            })}
           </nav>
 
           <div className="nav-btn">
             {status === "authenticated" ? (
-          <>
-            <span className="user-welcome">
-              Welcome, {session?.user?.name || "user"} 👋
-            </span>
-            <button onClick={() => signOut()} className="logout">
-              Logout
-            </button>
-          </>
-        ) : (
-          <>
-            <button onClick={() => signIn()} className="logout">
-              Login
-            </button>
-            <Link href="/sign-up" className="register-link">
-              Register
-            </Link>
-          </>
-        )}
+              <>
+                <span className="user-welcome">
+                  Welcome, {session?.user?.name || "user"} 👋
+                </span>
+                <button
+                  onClick={async () => {
+                    await signOut();
+                    persistor.purge();
+                  }}
+                  className="logout"
+                >
+                  Logout
+                </button>
+              </>
+            ) : (
+              <>
+                <button onClick={() => signIn()} className="logout">
+                  Login
+                </button>
+                <Link href="/sign-up" className="register-link">
+                  Register
+                </Link>
+              </>
+            )}
           </div>
         </Box>
       </Drawer>
