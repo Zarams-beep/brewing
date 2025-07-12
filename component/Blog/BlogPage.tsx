@@ -23,8 +23,12 @@ const Blog = () => {
 
   useEffect(() => {
     const getData = async () => {
+      const baseURL =
+      process.env.NODE_ENV === "production"
+        ? process.env.NEXT_PUBLIC_BASE_URL_PROD
+        : process.env.NEXT_PUBLIC_BASE_URL_DEV;
       try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/posts`, {
+        const res = await fetch(`${baseURL}/api/posts`, {
           cache: "no-store",
         });
         if (!res.ok) throw new Error("Failed to fetch data");

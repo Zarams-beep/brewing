@@ -9,7 +9,7 @@
 }
 .homepage-sub{
     @apply flex flex-col  bg-coffeeWhite dark:bg-dark-coffeeDark relative
-    py-[40px] w-full overflow-x-hidden;
+    py-[40px] w-full overflow-hidden;
  }
 /* home main styling ends */
 /* hero styling starts */

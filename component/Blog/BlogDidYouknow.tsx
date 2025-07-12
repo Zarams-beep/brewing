@@ -22,10 +22,15 @@ const DidYouKnow = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/facts`, {
-          cache: "no-store",
-        });
+      const baseURL =
+      process.env.NODE_ENV === "production"
+        ? process.env.NEXT_PUBLIC_BASE_URL_PROD
+        : process.env.NEXT_PUBLIC_BASE_URL_DEV;
+
+    try {
+      const res = await fetch(`${baseURL}/api/facts`, {
+        cache: "no-store",
+      });
         if (!res.ok) throw new Error("Failed to fetch facts");
         const json = await res.json();
         setData(json);

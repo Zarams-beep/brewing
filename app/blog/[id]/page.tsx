@@ -5,7 +5,12 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 async function getData(id:any) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/posts/${id}`, {
+  const baseURL =
+    process.env.NODE_ENV === "production"
+      ? process.env.NEXT_PUBLIC_BASE_URL_PROD
+      : process.env.NEXT_PUBLIC_BASE_URL_DEV;
+      
+  const res = await fetch(`${baseURL}/api/posts/${id}`, {
     cache: "no-store",
   });
 
