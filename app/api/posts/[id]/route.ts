@@ -1,32 +1,33 @@
-// app/api/posts/[id]/route.ts
-
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse, NextRequest } from "next/server";
 import connect from "@/utils/db";
 import Post from "@/modal/Post";
 
-// ✅ Don't over-type! Inline the exact structure like this 👇
-export async function GET(
-  req: NextRequest,
-  { params }: { params: { id: string } }
-) {
+export const GET = async (
+  request: NextRequest,
+  context: { params: Promise<{ id: string }> }
+) => {
+  const { id } = await context.params;
+
   try {
     await connect();
-    const post = await Post.findById(params.id);
+    const post = await Post.findById(id);
     return NextResponse.json(post, { status: 200 });
   } catch (err) {
     return new NextResponse("Database Error", { status: 500 });
   }
-}
+};
 
-export async function DELETE(
-  req: NextRequest,
-  { params }: { params: { id: string } }
-) {
+export const DELETE = async (
+  request: NextRequest,
+  context: { params: Promise<{ id: string }> }
+) => {
+  const { id } = await context.params;
+
   try {
     await connect();
-    await Post.findByIdAndDelete(params.id);
+    await Post.findByIdAndDelete(id);
     return new NextResponse("Post has been deleted", { status: 200 });
   } catch (err) {
     return new NextResponse("Database Error", { status: 500 });
   }
-}
+};

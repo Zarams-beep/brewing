@@ -16,12 +16,11 @@ async function getData(id:any) {
 }
 
 type PageParams = {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>;
 };
 export async function generateMetadata({ params }: PageParams) {
-  const post = await getData(params.id);
+const { id } = await params; // 👈 await required
+  const post = await getData(id);
 
   return {
     title: post.title,
@@ -30,7 +29,8 @@ export async function generateMetadata({ params }: PageParams) {
 }
 
 const BlogPost = async ({ params }: PageParams) => {
-  const data = await getData(params.id);
+  const { id } = await params; // 👈 await required
+  const data = await getData(id);
   return (
     <div className='blog-small-container'>
         <div className='imageContainer'>
