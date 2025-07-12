@@ -2,10 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import connect from "@/utils/db";
 import Post from "@/modal/Post";
 
-// ✅ Correct type shape for context in App Router
 export async function GET(
   request: NextRequest,
-  context: { params: { id: string } }
+  context: { params: Record<string, string> }
 ) {
   const { id } = context.params;
 
@@ -20,7 +19,7 @@ export async function GET(
 
 export async function DELETE(
   request: NextRequest,
-  context: { params: { id: string } }
+  context: { params: Record<string, string> }
 ) {
   const { id } = context.params;
 
