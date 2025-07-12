@@ -1,9 +1,12 @@
+// app/api/posts/[id]/route.ts
+
 import { NextRequest, NextResponse } from "next/server";
 import connect from "@/utils/db";
 import Post from "@/modal/Post";
 
+// ✅ Don't over-type! Inline the exact structure like this 👇
 export async function GET(
-  request: NextRequest,
+  req: NextRequest,
   { params }: { params: { id: string } }
 ) {
   try {
@@ -16,7 +19,7 @@ export async function GET(
 }
 
 export async function DELETE(
-  request: NextRequest,
+  req: NextRequest,
   { params }: { params: { id: string } }
 ) {
   try {
