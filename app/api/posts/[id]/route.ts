@@ -2,10 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import connect from "@/utils/db";
 import Post from "@/modal/Post";
 
-// ✅ Don't create custom types — inline it directly
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Record<string, string> }
 ) {
   const { id } = params;
 
@@ -20,7 +19,7 @@ export async function GET(
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Record<string, string> }
 ) {
   const { id } = params;
 
