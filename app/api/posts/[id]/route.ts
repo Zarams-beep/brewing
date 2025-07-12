@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import connect from "@/utils/db";
 import Post from "@/modal/Post";
 
-// ✅ GET single post by ID
+// GET single post by ID
 export async function GET(
   request: NextRequest,
   context: { params: { id: string } }
@@ -18,7 +18,7 @@ export async function GET(
   }
 }
 
-// ✅ DELETE a post by ID
+// DELETE a post by ID
 export async function DELETE(
   request: NextRequest,
   context: { params: { id: string } }
