@@ -1,12 +1,20 @@
 import { NextRequest, NextResponse } from "next/server";
+import type { NextApiRequest } from "next";
 import connect from "@/utils/db";
 import Post from "@/modal/Post";
 
+// Use `params` safely by explicitly typing it for App Router
+interface Context {
+  params: {
+    id: string;
+  };
+}
+
 export async function GET(
   request: NextRequest,
-  context: { params: { id: string } }
+  context: Context
 ) {
-  const { id } = context.params;
+  const id = context.params.id;
 
   try {
     await connect();
@@ -19,9 +27,9 @@ export async function GET(
 
 export async function DELETE(
   request: NextRequest,
-  context: { params: { id: string } }
+  context: Context
 ) {
-  const { id } = context.params;
+  const id = context.params.id;
 
   try {
     await connect();
