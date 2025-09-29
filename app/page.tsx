@@ -5,7 +5,7 @@ import SecondHomepage from '@/component/homepage/SecondHomepage'
 import ThirdHomePage from "@/component/homepage/ThirdHomePage";
 import Image from "next/image";
 import FifthHomePage from "@/component/homepage/FifthHomePage";
-import SixthHomePage from "@/component/homepage/SixthHomePage";
+// import SixthHomePage from "@/component/homepage/SixthHomePage";
 import Footer from "@/component/Footer/Footer";
 const page = () => {
    
