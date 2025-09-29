@@ -74,10 +74,10 @@
 
 /* third home page styling starts */
 .third-home-container{
-    @apply py-10 w-full bg-[green]
+    @apply py-10 w-full;
 }
 .third-home-container .container{
-    @apply flex flex-col gap-10 bg-[red]
+    @apply flex flex-col gap-10;
 }
 .third-home-container header{
     @apply flex items-center justify-center flex-col text-center
