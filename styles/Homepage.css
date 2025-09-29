@@ -183,11 +183,11 @@
     @apply text-mutedGray dark:text-dark-mutedGray font-signature  text-[15px] md:text-[17px]
 }
 .sixth-home-container .keen-slider{
-    @apply w-full mx-auto px-4 bg-primary/5 dark:bg-dark-primary/5 my-5
+    @apply w-full bg-primary/5 dark:bg-dark-primary/5 my-5
     border border-primary dark:border-dark-primary overflow-hidden;
 }
 .sixth-home-container .keen-slider__slide {
-  @apply flex flex-col items-center justify-center px-6 md:px-10 max-w-4xl mx-auto text-center;
+  @apply flex flex-col items-center justify-center text-center;
 }
 
 .sixth-home-container .keen-slider p{
