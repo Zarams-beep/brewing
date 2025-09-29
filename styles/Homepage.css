@@ -14,7 +14,7 @@
 /* home main styling ends */
 /* hero styling starts */
 .hero-section {
-  @apply relative w-full h-full bg-cover bg-center;
+  @apply relative w-full h-full bg-cover bg-center overflow-hidden;
   background-image: url('/coffee_image.png');
 }
 

@@ -12,7 +12,7 @@
  }
 /* hero styling starts */
 .about-section {
-  @apply relative w-full h-full bg-cover bg-center;
+  @apply relative w-full h-full bg-cover bg-center overflow-hidden;
   background-image: url('/img-11.jpg');
 }
 .overlay {

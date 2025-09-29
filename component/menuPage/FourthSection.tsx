@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MdOutlineInfo } from "react-icons/md";
+// import { MdOutlineInfo } from "react-icons/md";
 
 const AddOnNotes = () => {
   return (
