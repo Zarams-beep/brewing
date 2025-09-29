@@ -18,7 +18,7 @@
   scrollbar-width: none;
 }
 .container {
-  @apply w-full max-w-[110rem] px-5 sm:px-[100px] mx-auto overflow-x-hidden;
+  @apply w-full max-w-[150rem] px-5 sm:px-[100px] mx-auto overflow-hidden;
 }
 
 @keyframes steam {
