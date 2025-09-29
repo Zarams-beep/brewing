@@ -21,7 +21,7 @@ const page = () => {
       <FourthHomePage/>
         </div>
         <FifthHomePage/>
-        <SixthHomePage/>
+        {/* <SixthHomePage/> */}
         <Footer/>
       </div>
     </div>
