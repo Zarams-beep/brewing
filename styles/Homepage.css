@@ -89,7 +89,7 @@
     @apply text-mutedGray2 dark:text-dark-mutedGray2 font-signature  text-[15px] md:text-[17px]
 }
  .keen-slider__slide section{
-    @apply hover:animate-wiggle transition-transform duration-300
+    @apply hover:animate-wiggle transition-transform duration-300 w-full
  }
 .keen-slider__slide img{
     @apply w-full h-[200px]
@@ -187,7 +187,7 @@
     border border-primary dark:border-dark-primary overflow-hidden;
 }
 .sixth-home-container .keen-slider__slide {
-  @apply flex flex-col items-center justify-center text-center;
+  @apply flex flex-col items-center justify-center text-center w-full;
 }
 
 .sixth-home-container .keen-slider p{
