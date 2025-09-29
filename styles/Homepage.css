@@ -17,13 +17,11 @@
   @apply relative w-full h-full bg-cover bg-center;
   background-image: url('/coffee_image.png');
 }
-.overlay {
-    @apply relative w-full h-full bg-cover bg-center z-10;
-   background-image: url('/overlay.png');
-}
+
+
 
 .hero-content {
-  @apply relative z-10 flex flex-col gap-[5px] h-full text-white px-[40px] py-[5rem] justify-center w-full md:w-[40rem];
+  @apply relative z-10 flex flex-col gap-[5px] h-full text-white py-[5rem] justify-center w-full md:w-[40rem];
 }
 .hero-content h6{
     @apply font-coffee font-semibold text-[16px] md:text-[22px] w-full leading-relaxed tracking-wide;
@@ -41,7 +39,7 @@
 
 /* second home page styling starts */
 .second-home-page{
-    @apply flex items-center lg:flex-row flex-col  gap-[50px] px-[40px]
+    @apply flex items-center lg:flex-row flex-col  gap-[50px]
 }
 
 .sub-second-home-page{
@@ -113,7 +111,7 @@
 
 /* fourth home page styling starts */
 .fourth-home-container{
-    @apply px-[40px] py-10
+    @apply py-10
 }
 .fourth-grid{
     @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6
@@ -134,7 +132,10 @@
 
 /* fifth home page styling starts */
 .fifth-home-container{
-    @apply flex items-center justify-between gap-[20px] px-[40px] py-10 w-full bg-background/20 dark:bg-dark-background/20 sm:flex-row flex-col
+    @apply py-10 w-full bg-background/20 dark:bg-dark-background/20 overflow-hidden;
+}
+.fifth-home-container .container{
+    @apply flex items-center justify-between gap-[20px] sm:flex-row flex-col overflow-hidden;
 }
 .fifth-section-1{
     @apply flex flex-col gap-4 w-full sm:w-[500px]
@@ -164,7 +165,10 @@
 
 /* sixth home page styling starts */
 .sixth-home-container{
-    @apply px-[40px] py-10 w-full bg-coffeeWhite dark:bg-dark-coffeeDark relative overflow-hidden
+    @apply py-10 w-full relative bg-coffeeWhite dark:bg-dark-coffeeDark overflow-hidden
+}
+.sixth-home-container .container{
+    @apply relative;
 }
 .sixth-home-container header{
     @apply flex items-center justify-center flex-col text-center
@@ -176,14 +180,15 @@
     @apply text-mutedGray dark:text-dark-mutedGray font-signature  text-[15px] md:text-[17px]
 }
 .sixth-home-container .keen-slider{
-    @apply w-full max-w-4xl mx-auto px-4  bg-primary/5 dark:bg-dark-primary/5 my-5
-    border border-primary dark:border-dark-primary p-5;
+    @apply w-full mx-auto px-4 bg-primary/5 dark:bg-dark-primary/5 my-5
+    border border-primary dark:border-dark-primary overflow-hidden;
 }
-.sixth-home-container .keen-slider__slide{
-    @apply flex flex-col justify-center items-center gap-4  w-full;
+.sixth-home-container .keen-slider__slide {
+  @apply flex flex-col items-center justify-center px-6 md:px-10 max-w-4xl mx-auto text-center;
 }
+
 .sixth-home-container .keen-slider p{
-    @apply text-mutedGray dark:text-dark-mutedGray italic text-justify text-[17px] w-[90%] font-read leading-relaxed
+    @apply text-mutedGray dark:text-dark-mutedGray italic text-justify text-[14px] md:text-[17px] w-full font-read leading-relaxed break-words break-normal
 }
 .quote-left{
     @apply absolute top-0 left-3 text-[20px] text-primary dark:text-dark-primary

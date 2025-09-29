@@ -21,7 +21,7 @@ const HeroAbout = () => {
     <div className="about-section">
       <div className="overlay">
         {!isMobile ? <HeaderBar /> : <MediaHeaderSection />}
-        
+        <div className="container">
         <motion.div
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ const HeroAbout = () => {
           <button className="">
             Order Now
           </button>
-        </motion.div>
+        </motion.div></div>
       </div>
     </div>
   );

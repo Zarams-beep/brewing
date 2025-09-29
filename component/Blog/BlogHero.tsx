@@ -23,6 +23,7 @@ const BlogHero = () => {
     <div className="blog-section">
       <div className="overlay">
         {!isMobile ? <HeaderBar /> : <MediaHeaderSection />}
+        <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +38,7 @@ const BlogHero = () => {
             Discover brewing secrets, customer spotlights, and everything that makes your morning better.
           </h4>
           {/* <button className="hero-button">Explore Posts</button> */}
-        </motion.div>
+        </motion.div></div>
       </div>
     </div>
   );

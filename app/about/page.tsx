@@ -26,10 +26,10 @@ const page = () => {
  <CoreValues/>
  </div>
  <SustainabilityCommunity/>
- <BehindTheBeans/>
-
+ <BehindTheBeans/> 
         <Footer/>
       </div>
+       
     </div>
   )
 }

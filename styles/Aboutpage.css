@@ -8,7 +8,7 @@
 }
 .aboutPage-sub{
     @apply flex flex-col bg-coffeeWhite dark:bg-dark-coffeeDark relative
-    p-[40px] w-full overflow-hidden;
+     w-full overflow-hidden;
  }
 /* hero styling starts */
 .about-section {
@@ -20,13 +20,13 @@
    background-image: url('/overlay.png');
 }
 .hero-content {
-  @apply relative z-10 flex flex-col gap-[5px] h-full text-white px-[40px] py-[5rem] justify-center w-full md:w-[40rem];
+  @apply relative z-10 flex flex-col gap-[5px] h-full text-white py-[5rem] justify-center w-full md:w-[40rem];
 }
 .hero-content h6{
     @apply font-coffee font-semibold text-[16px] md:text-[22px] w-full leading-relaxed tracking-wide;
 }
 .hero-content h1{
-    @apply font-clicker text-[100px] sm:text-[150px] md:text-[220px]  italic leading-relaxed tracking-wide w-full text-primary dark:text-dark-primary;
+    @apply font-clicker text-[100px] sm:text-[150px] md:text-[220px] italic leading-relaxed tracking-wide w-full text-primary dark:text-dark-primary;
 }
 .hero-content h4{
     @apply leading-relaxed tracking-wide text-[10px] sm:text-[12px] md:text-[16px] font-thin font-read text-justify;
@@ -38,9 +38,11 @@
 
 /* about content styling starts */
 .about-content-container, .our-story-section, .core-values-section, .fifth-container, .sustainability-section{
-@apply px-[40px] py-[3rem] flex flex-col gap-4 items-center text-center;
+@apply py-[3rem] text-center w-full;
 }
-
+.about-content-container .container, .our-story-section .container, .core-values-section .container, .fifth-container .container, .sustainability-section .container{
+  @apply flex flex-col gap-4 items-center;
+}
 .about-header, .our-story-header, .core-values-header, .beans-header, .sustainability-header{
   @apply flex flex-col gap-1 mb-4 justify-center items-center;
 }
@@ -53,11 +55,11 @@
 }
 
 .about-vision-mission-grid {
-    @apply flex md:flex-row flex-col gap-0 items-center justify-between
+  @apply flex  md:flex-row flex-col gap-6 items-center justify-center w-full;
 }
 
 .vision-box, .mission-box {
-    @apply flex-1 text-left p-[1rem];
+    @apply text-left;
 }
 
 .vision-title, .mission-title {
@@ -65,27 +67,34 @@
 }
 
 .vision-text, .mission-text {
-    @apply text-mutedGray2 dark:text-dark-mutedGray2 leading-relaxed text-[16px] text-justify;
+    @apply text-mutedGray2 dark:text-dark-mutedGray2 leading-relaxed text-[14px] md:text-[16px] text-justify;
 }
 
 /* Shows only on md+ and light mode */
 .coffee-image {
-  @apply hidden md:flex dark:hidden text-[20rem] text-secondary animate-float transition duration-300 ease-in-out;
+  @apply hidden md:flex dark:hidden text-[16rem] sm:text-[20rem] text-secondary animate-float transition duration-300 ease-in-out;
+}
+
+.coffee-image,
+.coffee-image-dark,
+.coffee-image-md,
+.coffee-image-dark-md {
+  @apply text-[8rem] sm:text-[12rem] md:text-[16rem] lg:text-[20rem] max-w-full;
 }
 
 /* Shows only on md+ and dark mode */
 .coffee-image-dark {
-  @apply hidden md:dark:flex text-[20rem] text-dark-secondary animate-float transition duration-300 ease-in-out;
+  @apply hidden md:dark:flex text-dark-secondary animate-float transition duration-300 ease-in-out;
 }
 
 /* Shows only on md- and light mode */
 .coffee-image-md {
-  @apply md:hidden flex dark:hidden text-[20rem] text-secondary animate-float transition duration-300 ease-in-out;
+  @apply md:hidden flex dark:hidden text-secondary animate-float transition duration-300 ease-in-out;
 }
 
 /* Shows only on md- and dark mode */
 .coffee-image-dark-md {
-  @apply md:dark:hidden hidden dark:flex text-[20rem] text-dark-secondary animate-float transition duration-300 ease-in-out;
+  @apply md:dark:hidden hidden dark:flex text-dark-secondary animate-float transition duration-300 ease-in-out;
 }
 
 /* about content styling ends */
@@ -101,7 +110,9 @@
 /* general styling ends */
 
 /* about story styling starts */
-
+.our-story-section .container{
+  @apply overflow-hidden
+}
 .our-story-timeline {
     @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative mt-[2rem] 
 }
@@ -150,10 +161,13 @@
 /* about core styling ends */
 /* how it helps styling starts */
 .fifth-container{
-    @apply bg-coffeeWhite dark:bg-dark-coffeeDark
+    @apply bg-coffeeWhite dark:bg-dark-coffeeDark overflow-hidden
+}
+.fifth-container .container{
+  @apply overflow-hidden w-full;
 }
 .how-help-container{
-  @apply flex flex-col md:flex-row items-center gap-x-10
+  @apply flex flex-col md:flex-row gap-x-10;
 }
 .reverse-help{
   @apply md:flex-row-reverse;
@@ -165,7 +179,7 @@
   @apply object-cover rounded-lg h-[10rem] w-[10rem] 
 }
 .arrow-help{
-  @apply absolute   flex justify-between z-10 w-full  h-full
+  @apply absolute flex justify-between z-10 w-full h-full
 }
 .arrow-help button{
   @apply bg-mutedGray/40 dark:bg-dark-mutedGray/40  text-text dark:text-dark-text text-[2rem] px-2 py-1 rounded
@@ -183,13 +197,14 @@
 
 /* sustainability styling starts */
 .sustainability-section{
-    @apply bg-mutedGray2/10 dark:bg-dark-mutedGray2/10 w-full
+    @apply bg-mutedGray2/10 
+    dark:bg-dark-mutedGray2/10 w-full
 }
 .sustainability-sub{
     @apply flex items-center md:items-start justify-center md:flex-row flex-col-reverse gap-[20px] md:justify-between w-full ;
 }
 .sustainability-sub-1{
-    @apply flex flex-col gap-7 w-[40rem] px-[40px]
+    @apply flex flex-col gap-7 w-full md:w-[40rem]
 }
 .sustainability-min-1{
     @apply flex items-center md:flex-row flex-col gap-3  shadow-lg p-7 border-y-[4px] border-[#8A9A5B]/10 rounded-lg py-4
@@ -207,7 +222,7 @@
     @apply text-text dark:text-dark-text text-start font-coffee
 }
 .img-sustainability{
-    @apply w-[20rem] h-[20rem]
+    @apply w-[10rem] h-[10rem] md:w-[20rem] md:h-[20rem]
 }
 .img-sustainability img{
     @apply w-full h-full animate-float transition-transform duration-300

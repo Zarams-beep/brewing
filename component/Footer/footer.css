@@ -10,7 +10,10 @@
 }
 
 .footer-newsletter {
-  @apply flex flex-col gap-1 justify-center items-center bg-background/20 dark:bg-dark-background/20 w-full py-20;
+  @apply bg-background/20 dark:bg-dark-background/20 w-full py-20 flex flex-col gap-1 justify-center items-center;
+}
+.footer-newsletter .container{
+  @apply flex flex-col gap-1 justify-center items-center w-full
 }
 
 .footer-heading {
@@ -18,7 +21,7 @@
 }
 
 .footer-description {
-  @apply text-mutedGray dark:text-dark-mutedGray font-semibold font-clean text-center text-[14px] md:text-[16px] mb-4;
+  @apply text-mutedGray dark:text-dark-mutedGray font-semibold font-clean text-center text-[14px] md:text-[16px] mb-4 w-full ;
 }
 
 .footer-subscribe {
@@ -42,7 +45,12 @@
 }
 
 .footer-links {
-  @apply grid items-start w-full bg-coffeeWhite dark:bg-dark-coffeeDark px-[40px] py-11 gap-8;
+  @apply w-full bg-coffeeWhite dark:bg-dark-coffeeDark py-11;
+  
+}
+
+.footer-links .container{
+  @apply grid items-start gap-8;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 

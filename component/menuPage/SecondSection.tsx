@@ -101,6 +101,7 @@ const CoffeeMenu = () => {
 
   return (
     <div className="main-menu-wrapper">
+      <div className="container">
       <header>
         <h2>Discover Your Perfect Coffee Blend</h2>
         <p>
@@ -221,7 +222,7 @@ const CoffeeMenu = () => {
             </div>
           </motion.div>
         )}
-      </div>
+      </div></div>
     </div>
   );
 };

@@ -8,7 +8,7 @@
 }
 .blogPage-sub{
     @apply flex flex-col bg-coffeeWhite dark:bg-dark-coffeeDark relative
-    p-[40px] w-full overflow-hidden;
+    w-full overflow-hidden;
  }
 /* hero styling starts */
 .blog-section {
@@ -20,7 +20,7 @@
    background-image: url('/overlay.png');
 }
 .blog-section .hero-content {
-  @apply relative z-10 flex flex-col gap-[5px] h-full text-white px-[40px] py-[5rem] justify-center w-full md:w-[70rem];
+  @apply relative z-10 flex flex-col gap-[5px] h-full text-white py-[5rem] justify-center w-full md:w-[70rem];
 }
 .blog-section .hero-content h6{
     @apply font-coffee font-semibold text-[16px] md:text-[22px] w-full leading-relaxed tracking-wide;

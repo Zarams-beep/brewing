@@ -97,7 +97,7 @@ const ThirdHomePage = () => {
   };
 
   return (
-    <div className="third-home-container">
+    <div className="third-home-container container">
       <Toaster position="top-right" />
 
       <header>

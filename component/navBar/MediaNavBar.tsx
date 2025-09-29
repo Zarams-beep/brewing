@@ -50,6 +50,7 @@ export default function MediaHeaderSection() {
   return (
     <>
       <div className="nav-bar-container" style={{ opacity: isSticky }}>
+        <div className="container">
         <Link href="/" className="logo">
           Brewing
         </Link>
@@ -62,7 +63,7 @@ export default function MediaHeaderSection() {
           >
             <CiMenuBurger className="burger-menu" />
           </IconButton>
-        </div>
+        </div></div>
       </div>
 
       {/* MUI Drawer */}

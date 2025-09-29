@@ -43,6 +43,7 @@ const Footer = () => {
 
       {/* Newsletter Subscription */}
       <section className="footer-newsletter">
+        <div className="container">
         <h2 className="footer-heading">Subscribe to get the Latest News</h2>
         <p className="footer-description">Don’t miss out on our latest news, updates, tips and special offers</p>
 
@@ -59,10 +60,12 @@ const Footer = () => {
         </form>
         {errors.email && <p className="footer-error">{errors.email.message}</p>}
         {isSubmitSuccessful && <p className="footer-success">Thanks for subscribing! 🎉</p>}
+        </div>
       </section>
 
       {/* Footer Links */}
       <div className="footer-links">
+        <div className="container">
         <section className="footer-section">
           <h3 className="footer-section-title">Brewing</h3>
           <p className="footer-section-desc">
@@ -98,7 +101,7 @@ const Footer = () => {
           <p>+1 202-918-2132</p>
           <p>beanscene@mail.com</p>
           <p>www.beanscene.com</p>
-        </section>
+        </section></div>
       </div>
     </footer>
   );

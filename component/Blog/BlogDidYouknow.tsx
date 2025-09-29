@@ -54,7 +54,7 @@ const DidYouKnow = () => {
   const currentFact = data[index];
 
   return (
-    <div className="did-you-know">
+    <div className="did-you-know container">
       <h2 className="header-know">
         <FaLightbulb className="bulb" /> Did You Know?
       </h2>

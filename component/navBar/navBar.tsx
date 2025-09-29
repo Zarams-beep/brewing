@@ -42,6 +42,7 @@ const HeaderBar = () => {
 
   return (
     <div className="nav-bar-container" style={{ opacity: isSticky }}>
+      <div className="container">
       <Link href="/" className="logo">
         Brewing
       </Link>
@@ -97,7 +98,7 @@ const HeaderBar = () => {
             </Link>
           </>
         )}
-      </nav>
+      </nav></div>
     </div>
   );
 };

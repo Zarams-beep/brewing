@@ -49,6 +49,7 @@ const BaristasPick = () => {
 
   return (
     <div className="main-baristas-section">
+      <div className="container">
     <header className="">
   <h2 className="">
     Handpicked by Our Baristas
@@ -85,7 +86,7 @@ const BaristasPick = () => {
       </div>
     </motion.div>
   )}
-</section>
+</section></div>
 </div>
   );
 };

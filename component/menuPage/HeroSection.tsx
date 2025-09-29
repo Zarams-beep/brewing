@@ -21,7 +21,7 @@ const HeroMenu = () => {
     <div className="menu-section">
       <div className="overlay">
         {!isMobile ? <HeaderBar /> : <MediaHeaderSection />}
-
+<div className="container">
         {/* Overlay content */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -38,7 +38,7 @@ const HeroMenu = () => {
             Discover a menu brewed for every mood, from the rich boldness of espresso to the smooth comfort of chai. Crafted with love, sipped with joy.
           </h4>
           <button className="">Order Now</button>
-        </motion.div>
+        </motion.div></div>
       </div>
     </div>
   );

@@ -45,6 +45,7 @@ const efforts = [
 const SustainabilityCommunity = () => {
   return (
     <section className="sustainability-section">
+      <div className="container">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -66,10 +67,10 @@ const SustainabilityCommunity = () => {
         >
           {efforts.map((effort, index) => (
             <motion.div key={index} variants={itemVariants} className="sustainability-min-1">
-              <div className="icon text-3xl text-primary dark:text-dark-primary">{effort.icon}</div>
+              <div className="icon">{effort.icon}</div>
               <div>
-                <h4 className="font-semibold text-lg">{effort.title}</h4>
-                <p className="text-mutedGray dark:text-dark-mutedGray">{effort.description}</p>
+                <h4 className="">{effort.title}</h4>
+                <p className="">{effort.description}</p>
               </div>
             </motion.div>
           ))}
@@ -90,7 +91,7 @@ const SustainabilityCommunity = () => {
             quality={100}
           />
         </motion.div>
-      </div>
+      </div></div>
     </section>
   );
 };

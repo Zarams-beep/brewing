@@ -46,6 +46,7 @@ const itemVariants = {
 const OurStory = () => {
   return (
     <section className="our-story-section">
+      <div className="container">
       <motion.div
         className="our-story-header"
         initial={{ opacity: 0, y: -30 }}
@@ -79,7 +80,7 @@ const OurStory = () => {
             </div>
           </motion.div>
         ))}
-      </div>
+      </div></div>
     </section>
   );
 };

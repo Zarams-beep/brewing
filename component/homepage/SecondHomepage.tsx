@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { SiCoffeescript } from "react-icons/si";
 const SecondHomepage = () => {
   return (
-    <div className='second-home-page'>
+    <div className='second-home-page container'>
       {/* section 1 */}
       <div className="sub-second-home-page">
 <h3>Discover the best coffee</h3>

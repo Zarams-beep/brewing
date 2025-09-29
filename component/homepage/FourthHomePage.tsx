@@ -42,7 +42,7 @@ const features: FeatureItem[] = [
 
 const FourthHomePage = () => {
   return (
-    <div className="fourth-home-container third-home-container">
+    <div className="fourth-home-container third-home-container container">
       <header className="">
         <h2 className="">
           Why are we different?

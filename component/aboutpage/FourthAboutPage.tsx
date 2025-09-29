@@ -33,6 +33,7 @@ const coreValues = [
 const CoreValues = () => {
   return (
     <section className="core-values-section">
+      <div className="container">
       <div className="core-values-header">
         <h2 className="">Our Core Values</h2>
         <p className="">
@@ -50,7 +51,7 @@ const CoreValues = () => {
             <p className="">{value.description}</p>
           </div>
         ))}
-      </div>
+      </div></div>
     </section>
   );
 };

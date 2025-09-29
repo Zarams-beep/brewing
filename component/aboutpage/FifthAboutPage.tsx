@@ -36,6 +36,7 @@ const helps = [
 export default function BehindTheBeans() {
   return (
     <section className="fifth-container">
+      <div className="container">
       <div className="beans-header">
         <h2>Behind the Beans</h2>
         <p className="">
@@ -50,7 +51,7 @@ export default function BehindTheBeans() {
             reverse={index % 2 !== 0}
           />
         ))}
-      </div>
+      </div></div>
     </section>
   );
 }

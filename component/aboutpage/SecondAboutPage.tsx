@@ -1,11 +1,12 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import { GiCoffeeMug } from "react-icons/gi";
 import { DiCoffeescript } from "react-icons/di";
 const AboutContent = () => {
   return (
     <section className="about-content-container">
+      <div className="container">
       {/* Header & description */}
       <div className="about-header">
         <h2 className="about-title">More Than Just Coffee</h2>
@@ -46,7 +47,7 @@ const AboutContent = () => {
             To deliver exceptional coffee while fostering community and sustainability, one brew at a time.
           </p>
         </div>
-      </div>
+      </div></div>
     </section>
   );
 };

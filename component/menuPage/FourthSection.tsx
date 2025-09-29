@@ -6,6 +6,7 @@ import { MdOutlineInfo } from "react-icons/md";
 const AddOnNotes = () => {
   return (
     <div className="main-add-on-notes">
+      <div className="container">
     <header>
       <h2 className="">Just a Few Quick Notes</h2>
 <p className="">Here’s what you should know before you sip.</p>
@@ -29,7 +30,7 @@ const AddOnNotes = () => {
             <strong>Allergy info:</strong> Nuts, Dairy, Gluten (on request)
           </p>
         </div>
-    </motion.div></div>
+    </motion.div></div></div>
   );
 };
 

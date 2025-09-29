@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Footer from "@/component/Footer/Footer";
+// import Footer from "@/component/Footer/Footer";
 import MainLayoutSection from "@/component/General/MainLayout";
 export const metadata: Metadata = {
   title: "Brewing",

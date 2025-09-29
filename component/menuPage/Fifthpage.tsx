@@ -81,7 +81,9 @@ const Fifthpage = () => {
 
   return (
     <div className="order-section">
-        <header><h2 className="">Select Your Location</h2>
+      <div className="container">
+        <header>
+          <h2 className="">Select Your Location</h2>
 <p className="">We’ll tailor your order based on where you are.</p></header>
 
 <div className="order-section-2">
@@ -156,7 +158,7 @@ const Fifthpage = () => {
       )}
        </div>
       </section>
-</div>
+</div></div>
     </div>
   );
 };

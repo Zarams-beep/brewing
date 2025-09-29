@@ -116,6 +116,7 @@ const SixthHomePage = () => {
 
   return (
     <div className="sixth-home-container">
+      <div className="container">
       <header className="">
         <h2 className="">Our Coffee Perfection Feedback</h2>
         <p className="">Our customers have amazing things to say about us</p>
@@ -126,7 +127,7 @@ const SixthHomePage = () => {
           <div key={id} className="keen-slider__slide">
             <BiSolidQuoteAltLeft className="quote-left" />
             <p className="">
-              “{comment}”
+              {comment}
             </p>
             <div className="keen-main-sub">
               <div className="keen-sub">
@@ -166,6 +167,7 @@ const SixthHomePage = () => {
       >
         <FaArrowRight />
       </button>
+      </div>
 
       <Image src="/left_blast.svg" alt="left-blast" width={100} height={100} quality={100} className="left-blast2"/>    
 
