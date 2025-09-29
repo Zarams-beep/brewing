@@ -74,10 +74,13 @@
 
 /* third home page styling starts */
 .third-home-container{
-    @apply flex flex-col gap-10 py-10
+    @apply py-10
+}
+.third-home-container .container{
+    @apply flex flex-col gap-10
 }
 .third-home-container header{
-    @apply px-[40px] flex items-center justify-center flex-col text-center
+    @apply flex items-center justify-center flex-col text-center
 }
 .third-home-container header h2{
     @apply text-[25px] sm:text-[30px] md:text-[42px] font-bold text-primary dark:text-dark-primary font-read

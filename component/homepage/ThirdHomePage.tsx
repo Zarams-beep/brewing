@@ -97,9 +97,9 @@ const ThirdHomePage = () => {
   };
 
   return (
-    <div className="third-home-container container">
+    <div className="third-home-container">
       <Toaster position="top-right" />
-
+<div className="container">
       <header>
         <h2>Enjoy a new blend of coffee style</h2>
         <p>Explore all flavours of coffee with us. There is always a new cup worth experiencing.</p>
@@ -137,7 +137,7 @@ const ThirdHomePage = () => {
           ))}
         </div>
       )}
-    </div>
+    </div></div>
   );
 };
 
