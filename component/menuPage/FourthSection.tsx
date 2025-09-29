@@ -10,7 +10,6 @@ const AddOnNotes = () => {
     <header>
       <h2 className="">Just a Few Quick Notes</h2>
 <p className="">Here’s what you should know before you sip.</p>
-
     </header>
     <motion.div
       initial={{ opacity: 0, y: 20 }}

@@ -182,7 +182,7 @@ header p{
 
 /* add on styling starts */
 .main-add-on-notes{
-  @apply bg-coffeeWhite dark:bg-dark-coffeeDark
+  @apply bg-coffeeWhite dark:bg-dark-coffeeDark w-full
 }
 .add-on-notes{
   @apply pb-[2rem] m-auto w-full;
