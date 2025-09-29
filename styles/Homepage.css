@@ -21,7 +21,7 @@
 
 
 .hero-content {
-  @apply relative z-10 flex flex-col gap-[5px] h-full text-white py-[5rem] justify-center w-full md:w-[40rem];
+  @apply relative z-10 flex flex-col gap-[5px] h-full text-white py-[5rem] justify-center w-full md:w-[40rem] overflow-hidden;
 }
 .hero-content h6{
     @apply font-coffee font-semibold text-[16px] md:text-[22px] w-full leading-relaxed tracking-wide;
@@ -74,10 +74,10 @@
 
 /* third home page styling starts */
 .third-home-container{
-    @apply py-10
+    @apply py-10 w-full bg-[green]
 }
 .third-home-container .container{
-    @apply flex flex-col gap-10
+    @apply flex flex-col gap-10 bg-[red]
 }
 .third-home-container header{
     @apply flex items-center justify-center flex-col text-center
