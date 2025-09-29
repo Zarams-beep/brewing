@@ -169,9 +169,9 @@ const SixthHomePage = () => {
       </button>
       </div>
 
-      <Image src="/left_blast.svg" alt="left-blast" width={100} height={100} quality={100} className="left-blast2"/>    
+      {/* <Image src="/left_blast.svg" alt="left-blast" width={100} height={100} quality={100} className="left-blast2"/>    
 
-      <Image src="/right_blast.svg" alt="right-blast" width={100} height={100} quality={100} className="right-blast2"/>    
+      <Image src="/right_blast.svg" alt="right-blast" width={100} height={100} quality={100} className="right-blast2"/>     */}
     </div>
   );
 };
