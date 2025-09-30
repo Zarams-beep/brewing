@@ -213,7 +213,7 @@ header p{
   @apply h-full
 }
 .order-section-sub-2{
-  @apply h-full w-[40rem] bg-secondary dark:bg-dark-secondary items-center justify-center py-10 px-3 flex flex-col gap-4;
+  @apply h-full w-full md:w-[40rem] bg-secondary dark:bg-dark-secondary items-center justify-center py-10 px-3 flex flex-col gap-4;
 }
 .order-pick-up{
   @apply flex items-center gap-2;

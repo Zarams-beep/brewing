@@ -7,7 +7,7 @@ const FifthHomePage = () => {
       <section className='fifth-section-1'>
         <h3>Get a chance to have an
 Amazing morning</h3>
-<p>We are giving you are one time opportunity to
+<p>We are giving you a one time opportunity to
 experience a better life with coffee.</p>
 <button>Order Now</button>
       </section>
