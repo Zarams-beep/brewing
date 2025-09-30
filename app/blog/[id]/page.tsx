@@ -36,7 +36,7 @@ const BlogPost = async ({ params }: PageParams) => {
   const { id } = await params;
   const data = await getData(id);
   return (
-    <div className='blog-small-container'>
+    <div className='blog-small-container container'>
       <div className="first-blog-part">
         <div className='imageContainer'>
           <Image
