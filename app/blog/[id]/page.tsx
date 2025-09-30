@@ -23,7 +23,7 @@ type PageParams = {
   params: Promise<{ id: string }>;
 };
 export async function generateMetadata({ params }: PageParams) {
-const { id } = await params; // 👈 await required
+const { id } = await params;
   const post = await getData(id);
 
   return {
@@ -33,10 +33,11 @@ const { id } = await params; // 👈 await required
 }
 
 const BlogPost = async ({ params }: PageParams) => {
-  const { id } = await params; // 👈 await required
+  const { id } = await params;
   const data = await getData(id);
   return (
     <div className='blog-small-container'>
+      <div className="first-blog-part">
         <div className='imageContainer'>
           <Image
             src={data.img}
@@ -48,8 +49,7 @@ const BlogPost = async ({ params }: PageParams) => {
             className='img'
           />
         </div>
-       <div className="blog-small-content">
-         <div className='info'>
+          <div className='info'>
           <div className='author'>
             <Image
               src={data.img}
@@ -64,8 +64,10 @@ const BlogPost = async ({ params }: PageParams) => {
           <p className='desc'>
             {data.desc}
           </p>
-          
-        </div>
+        </div></div>
+        
+       <div className="blog-small-content">
+
       <div className='content'>     
         <p className='text'>
          {data.content}

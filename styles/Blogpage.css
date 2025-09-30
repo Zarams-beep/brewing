@@ -83,3 +83,36 @@
   @apply text-[15px] sm:text-[18px] text-text dark:text-dark-text italic font-clicker
 }
 /* did you know styling ends */
+
+/* blog small styling starts */
+.blog-small-container{
+  @apply flex items-center justify-between gap-4
+}
+.blog-small-container .first-blog-part{
+  @apply flex flex-col gap-1;
+}
+.blog-small-container .imageContainer{
+  @apply w-full max-w-3xl
+}
+.blog-small-container .imageContainer img{
+  @apply w-full h-full
+}
+.blog-small-container .info{
+  @apply flex flex-col gap-1;
+}
+.blog-small-container .author{
+  @apply flex items-center gap-1;
+}
+.blog-small-container img{
+  @apply w-[20px] h-[20px];
+}
+.blog-small-container .username{
+  @apply text-mutedGray2 dark:text-dark-mutedGray2
+}
+.blog-small-container .title{
+  @apply font-semibold text-[17px] text-primary dark:text-dark-primary;
+}
+.blog-small-container .content p{
+  @apply text-[16px] text-mutedGray2 dark:text-dark-mutedGray2 text-justify;
+}
+/* blog small styling ends */
