@@ -116,6 +116,6 @@
   @apply font-semibold text-[17px] text-primary dark:text-dark-primary;
 }
 .blog-small-container .content p{
-  @apply text-[16px] text-mutedGray2 dark:text-dark-mutedGray2 text-justify;
+  @apply text-[16px] text-mutedGray2 dark:text-dark-mutedGray2 text-justify w-full;
 }
 /* blog small styling ends */
