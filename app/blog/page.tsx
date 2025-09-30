@@ -3,6 +3,7 @@ import DidYouKnow from "@/component/Blog/BlogDidYouknow";
 import BlogHero from "@/component/Blog/BlogHero";
 import Blog from "@/component/Blog/BlogPage";
 import Footer from '@/component/Footer/Footer';
+import "../../styles/Blogpage.css";
 export const metadata = {
   title: "Coffee Blog Information",
   description: "This is Blog Page",
