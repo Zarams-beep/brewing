@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import "../../styles/Blogpage.css";
+import "../../../styles/Blogpage.css";
 async function getData(id:any) {
   const baseURL =
     process.env.NODE_ENV === "production"

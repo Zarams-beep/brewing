@@ -89,7 +89,7 @@
   @apply flex items-center justify-between gap-4
 }
 .blog-small-container .first-blog-part{
-  @apply flex flex-col gap-1 w-full;
+  @apply flex flex-col gap-1 w-full bg-[red];
 }
 .blog-small-container .imageContainer{
   @apply w-full max-w-3xl
