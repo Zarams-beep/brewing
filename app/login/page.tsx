@@ -9,6 +9,7 @@ import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FcGoogle } from "react-icons/fc";
+import { GrGithub } from "react-icons/gr";
 import { motion } from "framer-motion";
 import { useDispatch } from "react-redux";
 import { setUserData } from "@/store/slices/authSlices";
@@ -156,6 +157,17 @@ const onSubmit = async (data: LoginSchema) => {
               Login with Google
             </button>
           </div>
+
+          <div className="">
+            <button
+              onClick={() => signIn("github")}
+              className="google-auth"
+            >
+              <GrGithub size={20} />
+              Login with Google
+            </button>
+          </div>
+          
 
           <div className="text-center text-sm text-gray-500">- OR -</div>
 
