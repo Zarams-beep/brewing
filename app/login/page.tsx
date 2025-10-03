@@ -147,7 +147,7 @@ const onSubmit = async (data: LoginSchema) => {
             )}
           </form>
 
-          <div className="flex items-center justify-center">
+          <div className="">
             <button
               onClick={() => signIn("google")}
               className="google-auth"
