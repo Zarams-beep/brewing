@@ -164,7 +164,7 @@ const onSubmit = async (data: LoginSchema) => {
               className="google-auth"
             >
               <GrGithub size={20} />
-              Login with Google
+              Login with Github
             </button>
           </div>
           
